@@ -195,7 +195,7 @@ def img_path_to_encoding(image_path, model):
     
 
 def img_to_encoding(image, model):
-    image = cv2.resize(image, (96, 96)) 
+    image = cv2.imread(image, 1) 
     img = image[...,::-1]
     img = np.around(np.transpose(img, (2,0,1))/255.0, decimals=12)
     x_train = np.array([img])
