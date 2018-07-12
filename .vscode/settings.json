@@ -1,0 +1,3 @@
+{
+    "python.pythonPath": "${workspaceFolder}/pip3_dependencies/bin/python"
+}
